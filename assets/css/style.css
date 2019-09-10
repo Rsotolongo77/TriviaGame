@@ -8,12 +8,19 @@ body {
 
 
     background: none;
+    padding-bottom: 10px;
 }
 
 .container1 {
 
     background-color: aquamarine;
     height: 400px;
+    border: 12px solid rgb(212, 204, 130);
+    border-radius: 10px;
+    
+}
+
+
 }
 
 footer {
@@ -22,4 +29,14 @@ footer {
     bottom: 0;
     width: 100%;
    
+}
+
+
+.display-4 img{
+
+    height: 125px;
+    width: 500px;
+    vertical-align: middle;
+    margin-left: 295px;
+    
 }
