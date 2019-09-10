@@ -1,0 +1,25 @@
+body {
+
+    background-color: rgb(190, 88, 109);
+
+}
+
+.jumbotron {
+
+
+    background: none;
+}
+
+.container1 {
+
+    background-color: aquamarine;
+    height: 400px;
+}
+
+footer {
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+   
+}
