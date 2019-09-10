@@ -13,7 +13,7 @@ $(document).ready(function () {
     var triviaQuestions = [
         {
 
-            question: '',
+            question: 'Is the sky blue?',
             choices: ['a', 'b', 'c', 'd'],
             answer: 'c'
 
@@ -37,6 +37,18 @@ $(document).ready(function () {
     ];
 
 
+
+    //function to load questions//
+    function questionGenerator () {
+
+        var newQuestion = triviaQuestions[questionNumber].question;
+        var userChoices = triviaQuestions[questionNumber].choices;
+
+        $('#questions').html(newQuestion);
+        console.log (newQuestion);
+
+    }
+     questionGenerator();
 
 
 
