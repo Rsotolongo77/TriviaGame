@@ -13,9 +13,9 @@ $(document).ready(function () {
     var triviaQuestions = [
         {
 
-            question: 'Is the sky blue?',
-            choices: ['a', 'b', 'c', 'd'],
-            answer: 'c'
+            question: 'In the popular TV show The Office, which restaurant chain was Pam banned from? ',
+            choices: ['Taco Bell', 'Carrabbas', 'A Steakhouse', "Chili's"],
+            answer: "Chili's"
 
         },
 
@@ -33,8 +33,69 @@ $(document).ready(function () {
             choices: ['a', 'b', 'c', 'd'],
             answer: 'a'
 
+        },
+    
+        {
+
+            question: '',
+            choices: ['a', 'b', 'c', 'd'],
+            answer: 'a'
+
+        },
+
+        {
+
+            question: '',
+            choices: ['a', 'b', 'c', 'd'],
+            answer: 'a'
+
+        },
+
+        {
+
+            question: '',
+            choices: ['a', 'b', 'c', 'd'],
+            answer: 'a'
+
+        },
+
+        {
+
+            question: '',
+            choices: ['a', 'b', 'c', 'd'],
+            answer: 'a'
+
+        },
+
+        {
+
+            question: '',
+            choices: ['a', 'b', 'c', 'd'],
+            answer: 'a'
+
+        },
+
+        {
+
+            question: '',
+            choices: ['a', 'b', 'c', 'd'],
+            answer: 'a'
+
+        },
+
+        {
+
+            question: '',
+            choices: ['a', 'b', 'c', 'd'],
+            answer: 'a'
+
         }
+    
+    
+    
     ];
+
+
 
 
 
@@ -44,6 +105,7 @@ $(document).ready(function () {
         var newQuestion = triviaQuestions[questionNumber].question;
         var userChoices = triviaQuestions[questionNumber].choices;
 
+        $('#timer').html('Timer: '+ '<br>' + counter);
         $('#questions').html(newQuestion);
         console.log (newQuestion);
 
