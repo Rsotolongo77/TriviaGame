@@ -59,3 +59,18 @@ footer {
     border: 7px solid rgb(70, 68, 58)
     
 }
+
+.choice {
+
+    margin-left: 100px;
+    color: rgb(150, 0, 0);
+    border: 5px;
+    cursor: pointer;
+    border: solid;
+    border-radius: 15px;
+    border-color: rgba(6, 119, 184, 0.76);
+    width: 30%;
+    
+
+
+}
