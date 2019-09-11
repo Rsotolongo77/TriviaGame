@@ -1,5 +1,3 @@
-$(document).ready(function () {
-
     //global variables//
     var questionNumber = 0;
     var timer;
@@ -34,7 +32,7 @@ $(document).ready(function () {
             answer: '&nbsp c: &nbsp; Prince'
 
         },
-    
+
         {
 
             question: "What was the name of Norm's wife on Cheers?",
@@ -90,52 +88,79 @@ $(document).ready(function () {
             answer: '&nbsp d: &nbsp; Frodo '
 
         }
-    
-    
-    
+
+
+
     ];
 
 
-
-
+    
+    
 
     //function to load questions and choices//
-    function questionGenerator () {
+    function questionGenerator() {
+
+
 
         var newQuestion = triviaQuestions[questionNumber].question;
         var choices = triviaQuestions[questionNumber].choices;
 
-        $('#timer').html('Timer: '+ '<br>' + counter);
-        $('#questions').html(`
-            <h1>${newQuestion}</h1><br>
+        $('#timer').html('Timer:'  + counter);
+        $('#questions').html(`<h1>${newQuestion}</h1><br>
             <h3>${choicesGenerator(choices)}</h3> 
         `);
-    
-        
+
+        timer = setInterval(timerControl, 1000);
 
 
-        
+
+
 
     }
 
-     //function to generate choices corresponding to questions//
-    function choicesGenerator (choices)  {
+    //function to generate choices corresponding to questions//
+    function choicesGenerator(choices) {
 
-        var possibleAnswers ='';
+        var possibleAnswers = '';
 
-        for(i=0; i < choices.length; i++) {
+        for (i = 0; i < choices.length; i++) {
             possibleAnswers += `<p class= "choice" data-answer="${choices[i]}">${choices[i]}</p>`;
         }
 
         return possibleAnswers;
+
+    }
+
+    questionGenerator();
+
+
+    
+    
+
+
+
+    //function to initiate timer//
+    function timerControl() {
         
+        counter--;
+        
+        $('#timer').html('Timer: ' + counter);
+        if (counter === 0) {
+            timeOver();
+        }
+
+
     }
 
 
+    function timeOver() {
 
-     questionGenerator();
+        clearInterval(timer);
+    }
+    
 
 
 
 
-});  
+
+ 
