@@ -202,4 +202,23 @@
             console.log('testing', userAnswer, answer);
     });
 
+    //restart game link created//
+    $("#restart").on("click", function () {
+        clearInterval(timer);
+        questionNumber = 0;
+        timer;
+        counter = 30;
+        correct = 0;
+        incorrect = 0;
+        $("#incorrect").html('&nbsp Incorrect: ' + incorrect);
+        $("#correct").html('&nbsp Correct: ' + correct);
+        questionGenerator();
+
+        
+
+
+
+    });
+
+
  
