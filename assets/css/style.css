@@ -28,9 +28,10 @@ body {
 
 footer {
 
-    position: absolute;
+    
     bottom: 0;
     width: 100%;
+    
    
 }
 
@@ -75,6 +76,7 @@ footer {
     text-align: center;
     
     
+    
 }
 
 
@@ -103,10 +105,27 @@ footer {
     border-radius: 15px;
     width: 15%;
     margin: auto;
-    margin-bottom: 5px;
     display: block;
     
 
     
     
+}
+
+.choice:hover {
+
+    background-color: aliceblue;
+    
+    
+}
+
+
+#restart:hover {
+
+    background-color: rgb(32, 32, 30);
+}
+
+#restart:focus {
+    
+    outline:0;
 }
