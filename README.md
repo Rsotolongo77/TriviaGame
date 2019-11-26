@@ -14,4 +14,4 @@ The user is presented with ten trivia questions. A count is kept of questions an
 
 ### You can visit site at https://rsotolongo77.github.io/TriviaGame/
 
-
+![ ](pic1.png)
