@@ -170,7 +170,7 @@ function nextQuestion() {
 
     var outOfQuestions = (triviaQuestions.length - 1) === questionNumber;
     if (outOfQuestions) {
-
+        $(document).off('click');
         console.log("Game is Over!");
     }
 
@@ -201,6 +201,7 @@ $(document).on('click', '.choice', function () {
         clearInterval(timer);
         nextQuestion();
     }
+
 
     console.log('testing', userAnswer, answer);
 });
